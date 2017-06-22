@@ -52,3 +52,6 @@ CATEGORIES_SAVE_AS = ""
 AUTHORS_SAVE_AS = ""
 AUTHOR_SAVE_AS = ""
 ARCHIVES_SAVE_AS = ""
+
+PLUGIN_PATHS = ["plugins"]
+PLUGINS = ["gzip_plugin"]
