@@ -1,0 +1,288 @@
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  /* Fix for font-resizing behavior in ancient versions of IE. */
+  font-size: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Bitstream Charter", "Century Schoolbook L", "DejaVu Serif",
+               "Bitstream Vera Serif", "Georgia", "Times New Roman", "Serif";
+}
+
+.wrapper {
+  min-height: 100%;
+  position: relative;
+
+  max-width: 37.5em;
+
+  /* Center content. */
+  margin-left: auto;
+  margin-right: auto;
+
+  /* This gives us nice margins on mobile devices. */
+  padding-left: 1.875em;
+  padding-right: 1.875em;
+}
+
+#home-header {
+  font-size: 2.5rem;
+  margin-top: 6rem;
+}
+
+#main-content {
+  margin-top: 1.25em;
+  padding-bottom: 4.375em; /* Footer height */
+}
+
+#home-wrapper {
+  text-align: center;
+}
+
+#home-nav {
+  padding-left: 0;
+}
+
+.home-nav-item {
+  list-style-type: none;
+  margin-bottom: 0.4rem;
+  font-size: 1.7rem;
+}
+
+.home-nav-item a {
+  color: #000;
+}
+
+.home-nav-item a:hover {
+  text-decoration: none;
+  color: #3468C4;
+}
+
+
+h1, h2, h3, h4, h5, h6,
+.nav-link,
+#main-heading a,
+#footer,
+.title a,
+.home-nav-item {
+  font-family: "Nimubs Sans L", "Liberation Sans", "FreeSans", "Arial",
+               "Helvetica", "Sans";
+}
+
+a {
+  text-decoration: none;
+  color: #3468C4;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.nav-link:hover,
+#main-heading a:hover,
+.title a:hover {
+  text-decoration: none;
+}
+
+p,
+li {
+  line-height: 1.6;
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+
+.title a {
+  font-size: 24px;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 1.125rem;
+  font-size: 18px;
+}
+
+#main-heading {
+  font-size: 30px;
+  font-size: 1.875rem;
+  margin-top: 0;
+  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
+  padding-top: 20px;
+  padding-top: 1.25rem;
+}
+
+#main-heading a {
+  color: #000;
+  padding: 8px;
+  padding: 0.5rem;
+}
+
+#header {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-width: 0.063rem;
+  border-bottom-color: #000;
+  padding-bottom: 10px;
+}
+
+#navigation {
+  padding-left: 0;
+  margin-top: 10px;
+  margin-top: 0.625rem;
+  margin-bottom: 0;
+  columns: 2;
+}
+
+#header-link {
+  color: #333;
+  font-size: 40px;
+  font-size: 2.5rem;
+}
+
+.nav-item {
+  list-style-type: none;
+  display: block;
+  line-height: 1;
+}
+
+.nav-link {
+  display: block;
+  font-size: 20px;
+  font-size: 1.25rem;
+  padding: 8px;
+  padding: 0.5rem;
+  color: #000;
+}
+
+.nav-link:hover,
+#main-heading a:hover {
+  color: #3468C4;
+}
+
+.nav-link.selected {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 750px) {
+  #header {
+    padding-bottom: 6px;
+    padding-bottom: 0.375rem;
+  }
+
+  #main-heading a {
+    font-size: 40px;
+    font-size: 2.5rem;
+    padding: 0;
+    margin-bottom: 16px;
+    margin-bottom: 0.625rem;
+  }
+
+  #navigation {
+    columns: 1;
+
+    /*
+     * This removes unclickable space between links. This could also be done by
+     * removing whitespace during HTML minification.
+     */
+    font-size: 0;
+
+    margin-top: 14px;
+    margin-top: 0.875rem;
+  }
+
+  .nav-item {
+    display: inline-block;
+    margin-bottom: 0;
+    padding-bottom: 8px;
+    padding-bottom: 0.5rem;
+    line-height: 1.6;
+  }
+
+  .nav-link {
+    display: inline-block;
+    font-size: 24px;
+    font-size: 1.5rem;
+    padding: 0 12px 0 0;
+    padding: 0 0.75rem 0 0;
+  }
+
+  #navigation .nav-item:not(:first-child) .nav-link {
+    padding-left: 12px;
+    padding-left: 0.75rem;
+  }
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  height: 70px;
+  height: 4.375rem; /* Equal to padding-bottom for #content */
+}
+
+#footer-text {
+  display: block;
+  margin-top: 30px;
+  margin-top: 1.875rem;
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+
+/*** Index page ***/
+
+#post-list,
+#archive-list {
+  padding-left: 0;
+  margin: 0;
+}
+
+#post-list > li,
+.archive-item {
+  list-style-type: none;
+}
+
+.archive-item {
+  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
+}
+
+#post-list > li:not(:last-child) {
+  margin-bottom: 32px;
+  margin-bottom: 2rem;
+}
+
+.title a {
+  padding: 8px;
+  padding: 0.5rem;
+  margin: -8px;
+  margin: -0.5rem;
+}
+
+.title a:hover {
+  color: #3468C4;
+}
+
+@media screen and (min-width: 750px) {
+  .title a {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.title {
+  margin-bottom: 6px;
+  margin-bottom: 0.375rem;
+  margin-top: 0;
+}

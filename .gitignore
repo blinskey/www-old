@@ -1,0 +1,25 @@
+# Virtualenv
+env
+
+# Python bytecode
+__pycache__
+
+# Don't include textual content in this repository.
+content
+
+# Generated output.
+output
+
+# Vim swapfiles
+*.swp
+*.swo
+
+# Pelican server PID files
+pelican.pid
+srv.pid
+
+# To-do list
+TODO.txt
+
+# Makefile
+Makefile

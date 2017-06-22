@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+<head>
+{% block head %}
+<title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="theme-color" content="{{ THEME_COLOR }}">
+<meta name="keywords" content="Benjamin Linskey,Ben Linskey">
+<meta name="author" content="Benjamin Linskey">
+{% block meta %}{% endblock meta %}
+
+<link rel="stylesheet" type="text/css" href="/{{ THEME_STATIC_DIR }}/css/{{ CSS_FILE }}">
+{%block link %}{% endblock link %}
+
+{% endblock head %}
+</head>
+<body>
+  {% block body %}
+  {% endblock body %}
+</body>
+</html>

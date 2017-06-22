@@ -1,0 +1,15 @@
+{% extends "base_nav.html" %}
+
+{% block content %}
+
+{{ page.content }}
+
+<ul id="notes-list">
+  {% for article in dates %}
+    <li class="notes-item">
+      <a href="/{{ article.url }}">{{ article.title }}</a>
+    </li>
+  {% endfor %}
+</ol>
+
+{% endblock content %}
