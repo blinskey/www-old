@@ -12,6 +12,7 @@ PATH = "content"
 PAGE_PATHS = ["pages"]
 ARTICLE_PATHS = ["notes"]
 STATIC_PATHS = ["."]
+STATIC_EXCLUDES = ["./.git"]
 
 TIMEZONE = "America/New_York"
 
