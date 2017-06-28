@@ -24,7 +24,7 @@ def gzip_files(pelican):
                 gzip.open(path + ".gz", "wb") as out_file:
             shutil.copyfileobj(in_file, out_file)
 
-    for_each_file(pelican, compress)
+    for_each_file(pelican, compress, pattern=".*[^\.gz]$")
 
 
 def register():
