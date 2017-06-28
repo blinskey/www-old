@@ -26,8 +26,6 @@ AUTHOR_FEED_RSS = None
 
 DEFAULT_PAGINATION = False
 
-DIRECT_TEMPLATES = ["index"]
-
 THEME = "theme"
 THEME_STATIC_DIR = "static"
 

@@ -30,46 +30,16 @@ body {
   padding-right: 1.875em;
 }
 
-#home-header {
-  font-size: 2.5rem;
-  margin-top: 6rem;
-}
-
 #main-content {
   margin-top: 1.25em;
   padding-bottom: 4.375em; /* Footer height */
 }
 
-#home-wrapper {
-  text-align: center;
-}
-
-#home-nav {
-  padding-left: 0;
-}
-
-.home-nav-item {
-  list-style-type: none;
-  margin-bottom: 0.4rem;
-  font-size: 1.7rem;
-}
-
-.home-nav-item a {
-  color: #000;
-}
-
-.home-nav-item a:hover {
-  text-decoration: none;
-  color: #3468C4;
-}
-
-
 h1, h2, h3, h4, h5, h6,
 .nav-link,
 #main-heading a,
 #footer,
-.title a,
-.home-nav-item {
+.title a {
   font-family: "Nimubs Sans L", "Liberation Sans", "FreeSans", "Arial",
                "Helvetica", "Sans";
 }
