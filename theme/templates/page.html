@@ -1,7 +1,11 @@
 {% extends "base.html" %}
 
 {% block title %}
-  {{ page.title }} | {{ SITENAME }}
+  {% if page.title == "Home" %}
+    {{ SITENAME }}
+  {% else %}
+    {{ page.title }} | {{ SITENAME }}
+  {% endif %}
 {% endblock title %}
 
 {% block content %}
