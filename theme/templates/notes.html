@@ -1,17 +1,17 @@
 {% extends "base.html" %}
 
-{% block title %}{{ page.title }} | {{ SITENAME }}{% endblock title %}
+{% block title %}
+  {{ page.title }} | {{ SITENAME }}
+{% endblock title %}
 
 {% block content %}
+  {{ page.content }}
 
-{{ page.content }}
-
-<ul id="notes-list">
-  {% for article in dates %}
-    <li class="notes-item">
-      <a href="/{{ article.url }}">{{ article.title }}</a>
-    </li>
-  {% endfor %}
-</ol>
-
+  <ul id="notes-list">
+    {% for article in dates %}
+      <li class="notes-item">
+        <a href="/{{ article.url }}">{{ article.title }}</a>
+      </li>
+    {% endfor %}
+  </ol>
 {% endblock content %}
