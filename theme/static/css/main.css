@@ -39,7 +39,8 @@ h1, h2, h3, h4, h5, h6,
 .nav-link,
 #main-heading a,
 #footer,
-.title a {
+.title a,
+.notes-item {
   font-family: "Nimubs Sans L", "Liberation Sans", "FreeSans", "Arial",
                "Helvetica", "Sans";
 }
