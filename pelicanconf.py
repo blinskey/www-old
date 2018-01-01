@@ -39,6 +39,7 @@ ARTICLE_SAVE_AS = ARTICLE_URL + "/index.html"
 
 RELATIVE_URLS = False
 
+START_YEAR = "2017"
 CURRENT_YEAR = datetime.datetime.now().year
 
 CSS_FILE = 'main.css'
