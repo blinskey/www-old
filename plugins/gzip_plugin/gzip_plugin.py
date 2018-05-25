@@ -13,7 +13,7 @@ def for_each_file(pelican, func, pattern=".*"):
     regex = re.compile(pattern)
     for dirpath, dirnames, filenames in os.walk(out_dir):
         for name in filenames:
-            if (regex.match(name)):
+            if regex.match(name):
                 fullpath = os.path.join(dirpath, name)
                 func(fullpath)
 
